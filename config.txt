@@ -1,0 +1,34 @@
+# vebosity 
+quietMode = 0
+# save output tracking image, 
+saveImage = 1
+# name of seqeunce
+sequenceName = Stephane-handshaking-MeetingRoom03
+# path to the png files: file names must be in Img-%06d.png 
+sequenceFileName = /local_scratch/AVDataset/AnnotatedAV/ActionMeetingRoom/Stephane-handshaking-MeetingRoom03/Img/CAM1/
+# start frame to run tracking
+frameStart = 1
+# last frame to run tracking
+frameEnd = 75
+# path to read the initial bouding box
+detectionFileName = /local_scratch/AVDataset/AnnotatedAV/ActionMeetingRoom/Stephane-handshaking-MeetingRoom03/Tracking/init.txt
+# output file name where the bouding box result will be written
+outputFileName = bb_tracking.txt
+# output path
+outputFilePath = /local_scratch/AVDataset/AnnotatedAV/ActionMeetingRoom/Stephane-handshaking-MeetingRoom03/Tracking/
+# image width and size, if the input image size is not equal, there will be resizing 
+frameWidth = 1920
+frameHeight = 1200
+# random seed
+seed = 5
+# search radius to search for object
+searchRadius = 40
+# SVM constrain, c
+svmC = 10
+# Number of support pattern 
+svmBudgetSize = 30
+# tracked object with no detection for "frameTolerance" frame will be deleted
+frameTolerance = 3000
+# tracked object apperance model features and kernel
+feature = haar gaussian 0.200
+feature = histogram intersection 0.100
